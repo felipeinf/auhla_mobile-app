@@ -24,16 +24,17 @@ class CardStackWidget extends StatelessWidget {
         child: Card(
           color: GRAY_COLOR,
           child: Center(
-              child: Text(
-            NO_ITEMS_LEFT,
-            style: TextStyle(fontSize: 25.0, color: WHITE_COLOR),
-          )),
+            child: Text(
+              NO_ITEMS_LEFT,
+              style: TextStyle(fontSize: 25.0, color: WHITE_COLOR),
+            )
+          ),
         ),
       );
     } else {
       for (int i = 0; i < Provider.of<Data>(context).itemsList.length; i++) {
         cardItemdraggable = Container(
-          child: DraggableWidget(i: i),
+          child: DraggableWidget(index: i),
         );
       }
     }

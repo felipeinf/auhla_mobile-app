@@ -4,8 +4,8 @@ import 'package:auhla/ui/resources/strings.dart';
 
 class Constants{
 
-  static String SPLASH_SCREEN='SPLASH_SCREEN';
-  static String HOME_SCREEN='HOME_SCREEN';
+  static String SPLASH_SCREEN =' SPLASH_SCREEN';
+  static String HOME_SCREEN = 'HOME_SCREEN';
 
  static List<CardItem> initializeList(List<CardItem> itemList){
 
@@ -18,7 +18,5 @@ class Constants{
     ];
 
     return itemList;
-    
   }
-
 }

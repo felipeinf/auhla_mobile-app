@@ -28,13 +28,42 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CardStackWidget(),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: DragTargetWidget(),
+              Container(
+                margin: EdgeInsets.only(top: 20.0, left: 1.0),
+                child: Row(
+                  children: <Widget>[
+                    DragTargetWidget(label: 'Mitocondria'),
+                    DragTargetWidget(label: 'Ribosoma')
+                  ],
+                )
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 5.0, left: 1.0),
+                child: Row(
+                  children: <Widget>[
+                    DragTargetWidget(label: 'Celula Animal'),
+                    DragTargetWidget(label: 'Lisosoma')
+                  ],
+                )
               )
             ],
-          ),
-        ),
+          )
+          
+          /*Column(
+            
+            children: <Widget>[
+              CardStackWidget(),
+              Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: DragTargetWidget(),
+                  )
+                ],
+              )
+            ],
+          ),*/
+        )
       ),
     );
   }

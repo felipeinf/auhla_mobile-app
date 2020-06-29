@@ -12,7 +12,6 @@ class Data with ChangeNotifier {
   Data() {
     successDrop = false;
     acceptedColor = Colors.grey;
-
     items = Constants.initializeList(items);
   }
 
@@ -28,6 +27,7 @@ class Data with ChangeNotifier {
 
   changeAcceptedData(CardItem data) {
     acceptedData = data;
+    print(data);
     notifyListeners();
   }
 
